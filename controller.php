@@ -2,8 +2,8 @@
 namespace Concrete\Package\CoteoUikitPackage\Src;
 
 use Concrete\Core\Package\Package;
-use Concrete\Package\CoteoUikit\Src\UikitGridFramework;
-use Core;
+use Concrete\Package\CoteoUikitPackage\Src\UikitGridFramework;
+use Concrete\Core;
 
 defined('C5_EXECUTE') or die('Access Denied.');
 
