@@ -44,7 +44,8 @@ class UikitGridFramework extends GridFramework
       'uk-width-1-5',
       'uk-width-1-6',
       'uk-width-1-10'
-    )
+    );
+    return $columns;
   }
 
   public function getPageThemeGridFrameworkColumnOffsetClasses()
