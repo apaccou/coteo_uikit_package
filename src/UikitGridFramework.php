@@ -1,5 +1,5 @@
 <?php
-namespace Concrete\Package\Uikit\Src;
+namespace Concrete\Package\CoteoUikitPackage\Src;
 
 use Concrete\Core\Page\Theme\GridFramework\GridFramework;
 
