@@ -1,9 +1,9 @@
 <?php
 namespace Concrete\Package\Uikit\Src;
 
-use \Concrete\Core\Page\Theme\GridFramework\GridFramework;
+use Concrete\Core\Page\Theme\GridFramework\GridFramework;
 
-defined('C5_EXECUTE') or die(_("Access Denied."));
+defined('C5_EXECUTE') or die('Access Denied.');
 
 class UikitGridFramework extends GridFramework
 {
@@ -43,7 +43,7 @@ class UikitGridFramework extends GridFramework
       'uk-width-1-4',
       'uk-width-1-5',
       'uk-width-1-6',
-      'uk-width-1-10',
+      'uk-width-1-10'
     )
   }
 
@@ -61,7 +61,7 @@ class UikitGridFramework extends GridFramework
       'small-offset-9',
       'small-offset-10',
       'small-offset-11',
-      'small-offset-12',
+      'small-offset-12'
     );
     return $offsets;
   }

@@ -1,9 +1,9 @@
 <?php
-namespace Concrete\Package\CoteoUikit;
+namespace Concrete\Package\CoteoUikitPackage;
 
-use \Concrete\Core\Package\Package;
-use \Concrete\Package\CoteoUikit\Src\UikitGridFramework;
-use \Core;
+use Concrete\Core\Package\Package;
+use Concrete\Package\CoteoUikit\Src\UikitGridFramework;
+use Core;
 
 defined('C5_EXECUTE') or die('Access Denied.');
 
@@ -29,11 +29,11 @@ class Controller extends Package
     $pkg = parent::install();
   }
 
-  public function on_start()
-  {
-    $manager = Core::make('manager/grid_framework');
-    $manager->extend('uikit', function($app) {
-      return new UikitGridFramework();
-    });
-  }
+  // public function on_start()
+  // {
+  //   $manager = Core::make('manager/grid_framework');
+  //   $manager->extend('uikit', function($app) {
+  //     return new UikitGridFramework();
+  //   });
+  // }
 }
