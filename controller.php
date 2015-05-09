@@ -42,9 +42,9 @@ class Controller extends Package
         $al->register('css', 'uikit', 'uikit-2.20.3/css/uikit.min.css', array(), 'coteo_uikit_package');
 
         $al->registerGroup('uikit', array(
+            array('css', 'uikit'),
             array('javascript', 'jquery'),
             array('javascript', 'uikit'),
-            array('css', 'uikit'),
         ));
     }
 }

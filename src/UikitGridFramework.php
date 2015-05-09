@@ -25,12 +25,12 @@ class UikitGridFramework extends GridFramework
 
   public function getPageThemeGridFrameworkContainerStartHTML()
   {
-    return '';
+    return '<div class="uk-container uk-container-center">';
   }
 
   public function getPageThemeGridFrameworkContainerEndHTML()
   {
-    return '';
+    return '</div>';
   }
 
   public function getPageThemeGridFrameworkColumnClasses()
