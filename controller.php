@@ -70,8 +70,8 @@ class Controller extends Package
         });
 
         $al = AssetList::getInstance();
-        $al->register('javascript', 'uikit', 'uikit-2.20.3/js/uikit.min.js', array(), 'coteo_uikit_package');
-        $al->register('css', 'uikit', 'uikit-2.20.3/css/uikit.min.css', array(), 'coteo_uikit_package');
+        $al->register('javascript', 'uikit', 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.16/js/uikit.min.js', [], $this->pkgHandle);
+        $al->register('css', 'uikit', 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.16/css/uikit.min.css', [], $this->pkgHandle);
 
         $al->registerGroup('uikit', array(
             array('css', 'uikit'),
