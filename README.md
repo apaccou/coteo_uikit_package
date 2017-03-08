@@ -19,3 +19,5 @@ Inclus
 
 Dépendance
 ----------
+* uikit via Composer
+* font-awesome via Composer
