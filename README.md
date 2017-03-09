@@ -1,6 +1,6 @@
 Package Concrete5 pour version 5.8
 =============
-Ajout du Framework Uikit pour Agence COTEO par Alexandre PACCOU
+Base de développemen autour du Framework Uikit pour Agence COTEO par Alexandre PACCOU
 
 Installation
 ------------
@@ -16,6 +16,7 @@ Développé avec
 
 Inclus
 ------
+* uikit via cdnjs.cloudflare.com
 
 Dépendance
 ----------

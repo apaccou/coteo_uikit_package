@@ -59,6 +59,9 @@ class Controller extends Package
     }
     protected function installOrUpgrade($pkg)
     {
+        // Install theme
+        $handle = 'theme_vitrine_uikit';
+        $this->addTheme($handle, $pkg);
 
     }
 
