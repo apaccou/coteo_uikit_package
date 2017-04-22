@@ -20,7 +20,7 @@ use SinglePage;
 use PageTheme;
 use FileSet;
 
-use Concrete\Package\CoteoUikitPackage\Src\UikitGridFramework;
+// use Concrete\Package\CoteoUikitPackage\Src\UikitGridFramework;
 use Core;
 use Concrete\Core\Asset\AssetList;
 
@@ -63,24 +63,36 @@ class Controller extends Package
         $handle = 'theme_vitrine_uikit';
         $this->addTheme($handle, $pkg);
 
+        // Install single page
+        $path = '/mentions-legales';
+        $this->addSinglePage($path, $pkg, $name="", $description="");
+
+        // Install single page
+        $path = '/plan-du-site';
+        $this->addSinglePage($path, $pkg, $name="", $description="");
+
     }
 
     public function on_start()
     {
-        $manager = Core::make('manager/grid_framework');
-        $manager->extend('uikit', function($app) {
-            return new UikitGridFramework();
-        });
+        // $manager = Core::make('manager/grid_framework');
+        // $manager->extend('uikit', function($app) {
+        //     return new UikitGridFramework();
+        // });
 
         $al = AssetList::getInstance();
-        $al->register('javascript', 'uikit', 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.16/js/uikit.min.js', [], $this->pkgHandle);
-        $al->register('css', 'uikit', 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.16/css/uikit.min.css', [], $this->pkgHandle);
+        // $al->register(
+        //   'css', 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
+        //     array('local' => false, 'version' => '4.7.0', 'minify' => false, 'combine' => true)
+        // );
+        $al->register('javascript', 'uikit', 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.21/js/uikit.min.js', [], $this->pkgHandle);
+        $al->register('css', 'uikit', 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.21/css/uikit.min.css', [], $this->pkgHandle);
 
-        $al->registerGroup('uikit', array(
-            array('css', 'uikit'),
-            array('javascript', 'jquery'),
-            array('javascript', 'uikit'),
-        ));
+        // $al->registerGroup('uikit', array(
+        //     array('css', 'uikit'),
+        //     array('javascript', 'jquery'),
+        //     array('javascript', 'uikit'),
+        // ));
     }
 
     /**

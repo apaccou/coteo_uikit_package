@@ -16,9 +16,9 @@ Développé avec
 
 Inclus
 ------
+* jquery via cdnjs.cloudflare.com
 * uikit via cdnjs.cloudflare.com
 
 Dépendance
 ----------
-* uikit via Composer
 * font-awesome via Composer
