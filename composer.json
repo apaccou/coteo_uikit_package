@@ -1,6 +1,4 @@
 {
     "require": {
-        "uikit/uikit": "^2.27",
-        "fortawesome/font-awesome": "^4.7"       
     }
 }

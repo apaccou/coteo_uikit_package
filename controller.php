@@ -2,6 +2,7 @@
 namespace Concrete\Package\CoteoUikitPackage;
 
 use Package;
+use \Concrete\Core\Page\Theme\Theme;
 use BlockType;
 use AttributeSet;
 use \Concrete\Core\Attribute\Key\Category as AttributeKeyCategory;
@@ -81,18 +82,18 @@ class Controller extends Package
         // });
 
         $al = AssetList::getInstance();
-        // $al->register(
-        //   'css', 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
-        //     array('local' => false, 'version' => '4.7.0', 'minify' => false, 'combine' => true)
-        // );
-        $al->register('javascript', 'uikit', 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.21/js/uikit.min.js', [], $this->pkgHandle);
-        $al->register('css', 'uikit', 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.21/css/uikit.min.css', [], $this->pkgHandle);
+        $al->register(
+          'css', 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
+            array('local' => false, 'version' => '4.7.0', 'minify' => false, 'combine' => true)
+        );
+        $al->register('javascript', 'uikit', 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit.min.js', ['local' => false], $this->pkgHandle);
+        $al->register('css', 'uikit', 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/css/uikit.min.css', ['local' => false], $this->pkgHandle);
 
-        // $al->registerGroup('uikit', array(
-        //     array('css', 'uikit'),
-        //     array('javascript', 'jquery'),
-        //     array('javascript', 'uikit'),
-        // ));
+        $al->registerGroup('uikit', array(
+            array('css', 'uikit'),
+            array('javascript', 'jquery'),
+            array('javascript', 'uikit'),
+        ));
     }
 
     /**
@@ -464,9 +465,9 @@ class Controller extends Package
      */
     protected function addTheme($handle, $pkg)
     {
-        $theme = PageTheme::getByHandle($handle);
+        $theme = Theme::getByHandle($handle);
         if (!is_object($theme)) {
-            $theme = PageTheme::add($handle, $pkg);
+            $theme = Theme::add($handle, $pkg);
         }
 
         return $theme;

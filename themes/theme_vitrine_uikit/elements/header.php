@@ -11,4 +11,4 @@
 
 </head>
 <body id="top" class="<?php echo $c->getPageWrapperClass() ?>" itemscope itemtype="http://schema.org/WebPage">
-<div id="document">
+<div id="document" class="uk-offcanvas-content">

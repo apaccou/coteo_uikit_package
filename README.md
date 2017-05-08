@@ -18,7 +18,7 @@ Inclus
 ------
 * jquery via cdnjs.cloudflare.com
 * uikit via cdnjs.cloudflare.com
+* font-awesome via cdnjs.cloudflare.com
 
 Dépendance
 ----------
-* font-awesome via Composer

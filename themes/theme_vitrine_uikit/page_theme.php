@@ -1,5 +1,5 @@
 <?php
-namespace Concrete\Package\CoteoBoilerplatePackage\Theme\ThemeVitrineUikit;
+namespace Concrete\Package\CoteoUikitPackage\Theme\ThemeVitrineUikit;
 
 use Concrete\Core\Page\Theme\Theme;
 use Concrete\Core\Asset\AssetList;
@@ -11,9 +11,10 @@ class PageTheme extends Theme
 
     public function registerAssets()
     {
-        $this->requireAsset('css', 'font-awesome');
+
         $this->requireAsset('uikit');
-        $this->requireAsset('css', 'styles');
+        $this->requireAsset('css', 'font-awesome');
+        // $this->requireAsset('css', 'styles');
         $this->requireAsset('javascript', 'jquery');
 
         $c = \Page::getCurrentPage();
@@ -25,10 +26,10 @@ class PageTheme extends Theme
             $al = AssetList::getInstance();
 
             $al->register(
-              'javascript', 'jquery', 'https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js',
+              'javascript', 'jquery', 'https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js',
                 array('local' => false, 'version' => '3.1.1', 'minify' => false, 'combine' => true, 'position' => \Concrete\Core\Asset\Asset::ASSET_POSITION_HEADER)
             );
         }
-        
+
     }
 }

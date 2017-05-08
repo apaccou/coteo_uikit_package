@@ -1,8 +1,12 @@
 Theme Vitrine Responsive v1.0
-Theme Concrete5 par Alexandre PACCOU / Agence COTEO 2015.
+Theme Concrete5 par Alexandre PACCOU / Agence COTEO 2017.
 Inclus
-+ uikit-2.19.0
-+ Jquery v1.11.0
++ uikit 3.0.0-beta.22
++ jquery 3.2.1
+
+Voir comment appliquer un template aux single page
+Appliquer classes UIkit au plan-du-site
+
 + Modernizr 2.7.2
 + LESSPHP https://github.com/leafo/lessphp
 + Lightbox http://www.lokeshdhakar.com/projects/lightbox2/
@@ -11,7 +15,7 @@ Inclus
 + Compatible power_slider_lite avec modification de view.php au niveau de l'appel javascript http://codeimpossible.com/2010/01/13/solving-document-ready-is-not-a-function-and-other-problems/
 
 Installer manuellement
-/elements/header_required.php ==> d�sactivation du chargement de jquery pour passage en jquery v1.11.0 uniquement en Front (dans le th�me)
+/elements/header_required.php ==> désactivation du chargement de jquery pour passage en jquery v1.11.0 uniquement en Front (dans le thème)
 /single_pages/mentions-legales.php
 /single_pages/recherche.php
 /blocks/autonav/templates/bootstrap_breadcrumb.php

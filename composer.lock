@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c7526af21ff3363cc4b19e580c35ebd1",
+    "content-hash": "49b5ebfaa696af30a3740458ccb08684",
     "packages": [
         {
             "name": "fortawesome/font-awesome",
@@ -53,34 +53,6 @@
                 "icon"
             ],
             "time": "2016-10-24T15:52:54+00:00"
-        },
-        {
-            "name": "uikit/uikit",
-            "version": "2.27.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/uikit/uikit.git",
-                "reference": "c43bd2fe9fe59c1b0df92a830fac7a3e9e011db5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/uikit/uikit/zipball/c43bd2fe9fe59c1b0df92a830fac7a3e9e011db5",
-                "reference": "c43bd2fe9fe59c1b0df92a830fac7a3e9e011db5",
-                "shasum": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.27-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "UIkit is a lightweight and modular front-end framework for developing fast and powerful web interfaces.",
-            "homepage": "http://getuikit.com/",
-            "time": "2016-10-24T07:49:19+00:00"
         }
     ],
     "packages-dev": [],

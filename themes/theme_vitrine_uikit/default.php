@@ -6,13 +6,12 @@ $view->inc('elements/header.php');
 
 <nav id="breadcrumb" class="" aria-label="Vous êtes ici : " role="navigation">
   <div class="uk-container uk-container-center">
-    <span class="">Vous êtes ici : </span>
     <?php $this->inc('elements/breadcrumb.php'); ?>
   </div>
 </nav>
 
-
 <div id="tools" class="">
+    Test Font Awesome<i class="fa fa-print" aria-hidden="true"></i>
     <a class="uk-visible-large" href="javascript:window.print()"><i class="uk-icon-print"></i><span class=""> Imprimer</span></a>
 </div>
 

@@ -1,6 +1,5 @@
 <header id="header" role="banner">
   <div class="header-top">
-    <?php //$view->inc('elements/navigation.php'); ?>
   </div>
   <div class="header-main">
     <p>Header Main</p>
@@ -8,6 +7,10 @@
   <div class="header-bottom">
   </div>
 </header>
+
+<div id="navigation">
+    <?php $view->inc('elements/navigation.php'); ?>
+</div>
 
 <footer id="footer" role="contentinfo">
   <div class="footer-top">

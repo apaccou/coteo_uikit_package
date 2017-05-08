@@ -1,19 +1,32 @@
 /*** BASE ***/
+/* Préfixer les classes qui servent d'identifiant de bloc ou d'éléments par co comme coteo ou concrete */
+
 
 /* Import Uikit. */
-@import "../../../vendor/uikit/uikit/src/less/uikit.less";
+/* @import "../../../vendor/uikit/uikit/src/less/uikit.less";*/
 /* Import our theme variables. */
 @import "presets/defaults.less";
 
 /* https://checklists.opquast.com/seo/criteria/le-contenu-textuel-propre-a-chaque-page-precede-les-elements-de-navigation */
 
 #document {
-  .uk-flex;
-  .uk-flex-column;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
 }
 #header {
-  .uk-flex-order-first;
-  background: red;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
+    order: -1;
+    background: red;
+}
+#navigation {
+    -ms-flex-order: -2;
+    -webkit-order: -2;
+    order: -2;
 }
 #breadcrumb {
   background: orange;
