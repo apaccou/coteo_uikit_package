@@ -22,3 +22,5 @@ Inclus
 
 Dépendance
 ----------
+
+TODO : Vérifier view.php
