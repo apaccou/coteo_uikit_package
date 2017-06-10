@@ -22,6 +22,7 @@ class PageTheme extends Theme
         $user = new \User;
         if ($currentPermissions->canViewToolbar() || $user->isLoggedIn()) {
             // $this->requireAsset('javascript', 'jquery');
+            $this->requireAsset('javascript', 'bootstrap/transition');
         } else {
             $al = AssetList::getInstance();
 
