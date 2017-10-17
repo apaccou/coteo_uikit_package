@@ -66,11 +66,11 @@ class Controller extends Package
 
         // Install single page
         $path = '/mentions-legales';
-        $this->addSinglePage($path, $pkg, $name="", $description="");
+        $this->addSinglePage($path, $pkg, $name="Mentions Légales", $description="");
 
         // Install single page
         $path = '/plan-du-site';
-        $this->addSinglePage($path, $pkg, $name="", $description="");
+        $this->addSinglePage($path, $pkg, $name="Plan du site", $description="");
 
     }
 
