@@ -95,4 +95,20 @@ class Controller extends Package
             array('javascript', 'uikit'),
         ));
     }
+
+    /**
+     * Add Theme
+     * @param string $handle Theme Handle
+     * @param object $pkg Package Object
+     * @return object Theme Object
+     */
+    protected function addTheme($handle, $pkg)
+    {
+        $theme = Theme::getByHandle($handle);
+        if (!is_object($theme)) {
+            $theme = Theme::add($handle, $pkg);
+        }
+
+        return $theme;
+    }
 }
