@@ -7,7 +7,7 @@ use Concrete\Core\Asset\Asset;
 
 class PageTheme extends Theme
 {
-    protected $pThemeGridFrameworkHandle = 'uikit';
+    // protected $pThemeGridFrameworkHandle = 'uikit';
 
     public function registerAssets()
     {
@@ -15,7 +15,7 @@ class PageTheme extends Theme
         $this->requireAsset('uikit');
         $this->requireAsset('css', 'font-awesome');
         // $this->requireAsset('css', 'styles');
-        $this->requireAsset('javascript', 'jquery');
+        // $this->requireAsset('javascript', 'jquery');
 
         $c = \Page::getCurrentPage();
         $currentPermissions = new \Permissions($c);
