@@ -86,8 +86,9 @@ class Controller extends Package
           'css', 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
             array('local' => false, 'version' => '4.7.0', 'minify' => false, 'combine' => true)
         );
-        $al->register('javascript', 'uikit', 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/js/uikit.min.js', ['local' => false], $this->pkgHandle);
-        $al->register('css', 'uikit', 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/css/uikit.min.css', ['local' => false], $this->pkgHandle);
+        $al->register('javascript', 'uikit', 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.31/js/uikit.min.js', ['local' => false], $this->pkgHandle);
+        $al->register('javascript', 'uikit', 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.31/js/uikit-icons.min.js', ['local' => false], $this->pkgHandle);        
+        $al->register('css', 'uikit', 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.31/css/uikit.min.css', ['local' => false], $this->pkgHandle);
 
         $al->registerGroup('uikit', array(
             array('css', 'uikit'),
