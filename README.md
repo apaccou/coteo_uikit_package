@@ -36,6 +36,7 @@ Dépendance
 
  TODO : Vérifier view.php
  TODO : Voir si utile d'utiliser https://documentation.concrete5.org/developers/designing-for-concrete5/packaging-your-theme/enabling-full-content-swap
+ TODO : voir si utile d'utiliser WEB FONT LOADER https://github.com/typekit/webfontloader#get-started et optimisation ? ici : https://www.lockedowndesign.com/load-google-fonts-asynchronously-for-page-speed/
 
  UikitGridFramework => désactivé car pas réussit à l'utiliser correctement et provoque des plantages lors de l'édition d'un agencement existant
  Nous utiliserons https://documentation.concrete5.org/developers/designing-for-concrete5/adding-complex-custom-layout-presets-in-your-theme en remplacement pour le moment.
